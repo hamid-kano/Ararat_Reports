@@ -25,10 +25,17 @@
   padding: 0; }
 
 body {
-  font-family: "Work Sans", sans-serif; }
+    font-family: 'Al-Jazeera-Arabic';
+}
+
+@font-face {
+    font-family: 'Al-Jazeera-Arabic';
+    src: url('../fonts/Al-Jazeera-Arabic.ttf') format('truetype');
+}
 
 .ubuntu-fonts {
-  font-family: "Ubuntu", sans-serif; }
+    font-family: 'Al-Jazeera-Arabic';
+}
 
 h1,
 h2,
@@ -46,23 +53,25 @@ p {
   line-height: 1.4; }
 
 a {
-  -webkit-transition-duration: 500ms;
-  transition-duration: 500ms;
-  text-decoration: none;
-  outline: none;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Ubuntu", sans-serif;
-  color: #8d8d8d; }
-  a:hover, a:focus {
-    font-family: "Ubuntu", sans-serif;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
     text-decoration: none;
     outline: none;
     font-size: 14px;
     font-weight: 400;
-    color: #0000ff; }
+    font-family: 'Al-Jazeera-Arabic';
+    color: #8d8d8d;
+}
+    a:hover, a:focus {
+        font-family: 'Al-Jazeera-Arabic';
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        text-decoration: none;
+        outline: none;
+        font-size: 14px;
+        font-weight: 400;
+        color: #0000ff;
+    }
 
 #preloader {
   display: -webkit-box;
@@ -400,18 +409,19 @@ img {
     flex: 0 0 80px;
     min-width: 80px; }
     .hero-area .hero-post-slide .single-slide .post-number p {
-      width: 55px;
-      height: 55px;
-      border: 5px solid;
-      border-color: #8d8d8d;
-      margin-right: 25px;
-      border-radius: 50%;
-      margin-bottom: 0;
-      text-align: center;
-      line-height: 45px;
-      font-size: 24px;
-      font-family: "Ubuntu", sans-serif;
-      font-weight: 700; }
+        width: 55px;
+        height: 55px;
+        border: 5px solid;
+        border-color: #8d8d8d;
+        margin-right: 25px;
+        border-radius: 50%;
+        margin-bottom: 0;
+        text-align: center;
+        line-height: 45px;
+        font-size: 24px;
+        font-family: 'Al-Jazeera-Arabic';
+        font-weight: 700;
+    }
   .hero-area .hero-post-slide .single-slide .post-title a {
     margin-bottom: 0;
     font-size: 14px;
@@ -431,13 +441,14 @@ img {
 .world-catagory-area .nav-tabs {
   padding: 10px 0;
   border-bottom: 2px solid #f1f1f1; }
-  .world-catagory-area .nav-tabs .title {
-    font-size: 18px;
-    color: #000000;
-    margin-bottom: 0;
-    margin-right: auto;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700; }
+    .world-catagory-area .nav-tabs .title {
+        font-size: 18px;
+        color: #000000;
+        margin-bottom: 0;
+        margin-right: auto;
+        font-family: 'Al-Jazeera-Arabic';
+        font-weight: 700;
+    }
   .world-catagory-area .nav-tabs .nav-link {
     padding: 0 1em;
     position: relative;
@@ -714,16 +725,17 @@ img {
 .world-latest-articles .title {
   margin-top: 50px;
   margin-bottom: 30px; }
-  .world-latest-articles .title h5 {
-    display: block;
-    font-size: 18px;
-    color: #000000;
-    margin-bottom: 0;
-    margin-right: auto;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
-    padding: 10px 0;
-    border-bottom: 2px solid #f1f1f1; }
+    .world-latest-articles .title h5 {
+        display: block;
+        font-size: 18px;
+        color: #000000;
+        margin-bottom: 0;
+        margin-right: auto;
+        font-family: 'Al-Jazeera-Arabic';
+        font-weight: 700;
+        padding: 10px 0;
+        border-bottom: 2px solid #f1f1f1;
+    }
 
 .post-sidebar-area {
   border-left: 2px solid #f1f1f1; }
@@ -732,17 +744,18 @@ img {
   position: relative;
   z-index: 1;
   border-bottom: 2px solid #f1f1f1; }
-  .sidebar-widget-area .title {
-    display: block;
-    font-size: 18px;
-    color: #000000;
-    margin-bottom: 0;
-    margin-right: auto;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
-    padding: 12px 0;
-    border-bottom: 2px solid #f1f1f1;
-    padding-left: 30px; }
+    .sidebar-widget-area .title {
+        display: block;
+        font-size: 18px;
+        color: #000000;
+        margin-bottom: 0;
+        margin-right: auto;
+        font-family: 'Al-Jazeera-Arabic';
+        font-weight: 700;
+        padding: 12px 0;
+        border-bottom: 2px solid #f1f1f1;
+        padding-left: 30px;
+    }
   .sidebar-widget-area .widget-content {
     padding: 30px 0 30px 30px; }
     @media only screen and (max-width: 767px) {
@@ -821,11 +834,12 @@ img {
   @media only screen and (max-width: 767px) {
     .single-blog-content .post-content {
       padding: 30px 25px; } }
-  .single-blog-content .post-content h6 {
+.single-blog-content .post-content h6 {
     line-height: 1.8;
     margin-bottom: 30px;
     color: #8d8d8d;
-    font-family: "Ubuntu", sans-serif; }
+    font-family: 'Al-Jazeera-Arabic';
+}
   .single-blog-content .post-content blockquote {
     border-left: 2px solid;
     border-color: #0000ff;
@@ -889,14 +903,15 @@ img {
     .contact-form,
     .post-a-comment-area {
       padding: 30px 25px; } }
-  .contact-form h5,
-  .post-a-comment-area h5 {
+.contact-form h5,
+.post-a-comment-area h5 {
     font-size: 18px;
     color: #000000;
     margin-bottom: 0;
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Al-Jazeera-Arabic';
     font-weight: 700;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+}
   .contact-form button.world-btn,
   .post-a-comment-area button.world-btn {
     border-color: #0000ff;
@@ -923,16 +938,17 @@ img {
     .group textarea:focus {
       outline: none;
       box-shadow: none; }
-  .group label {
-    color: #8d8d8d;
-    font-size: 14px;
-    font-weight: normal;
-    position: absolute;
-    pointer-events: none;
-    left: 0;
-    top: 5px;
-    transition: 0.5s ease all;
-    font-family: "Ubuntu", sans-serif; }
+    .group label {
+        color: #8d8d8d;
+        font-size: 14px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 0;
+        top: 5px;
+        transition: 0.5s ease all;
+        font-family: 'Al-Jazeera-Arabic';
+    }
   .group .bar {
     position: relative;
     display: block;
@@ -1233,26 +1249,28 @@ textarea:focus ~ .highlight {
     @media only screen and (max-width: 767px) {
       .footer-area .footer-single-widget .footer-menu {
         margin: 50px 0; } }
-  .footer-area .footer-single-widget h5 {
+.footer-area .footer-single-widget h5 {
     font-size: 18px;
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Al-Jazeera-Arabic';
     margin-bottom: 20px;
     font-weight: 700;
-    color: #ffffff; }
+    color: #ffffff;
+}
   .footer-area .footer-single-widget form {
     position: relative;
     z-index: 1; }
     .footer-area .footer-single-widget form input[type="email"] {
-      width: 100%;
-      height: 35px;
-      background-color: transparent;
-      border: none;
-      border-bottom: 1px solid;
-      border-color: #959595;
-      color: #959595;
-      font-size: 14px;
-      padding: 0 5px;
-      font-family: "Ubuntu", sans-serif; }
+        width: 100%;
+        height: 35px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid;
+        border-color: #959595;
+        color: #959595;
+        font-size: 14px;
+        padding: 0 5px;
+        font-family: 'Al-Jazeera-Arabic';
+    }
     .footer-area .footer-single-widget form button {
       position: absolute;
       height: 35px;
