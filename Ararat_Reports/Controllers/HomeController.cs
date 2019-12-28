@@ -13,17 +13,24 @@ namespace Ararat_Reports.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult catagory()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
-
+        public ActionResult single_blog()
+        {
+            return View();
+        }
+        public ActionResult Add_Report()
+        {
+            return View();
+        }
+        public ActionResult regular_page()
+        {
+            return View();
+        }
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }

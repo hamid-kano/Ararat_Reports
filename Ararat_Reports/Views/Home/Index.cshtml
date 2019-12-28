@@ -20,8 +20,7 @@
     <link rel="icon" href="~/img/core-img/favicon.ico">
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="~/style.css">
-
+    <link href="~/style.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -39,7 +38,7 @@
                 <div class="col-12">
                     <nav class="navbar navbar-expand-lg">
                         <!-- Logo -->
-                        <a class="navbar-brand" href="index.html"><img src="~/img/core-img/logo.png" alt="Logo"></a>
+                        <a class="navbar-brand" href="index"><img src="~/img/core-img/logo.png" alt="Logo"></a>
                         <!-- Navbar Toggler -->
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#worldNav" aria-controls="worldNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                         <!-- Navbar -->
@@ -47,6 +46,16 @@
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">اتصل بنا</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">الصفحات</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="index">الرئيسية</a>
+                                        <a class="dropdown-item" href="regular_page">المنشورات</a>
+                                        <a class="dropdown-item" href="single_blog">التقارير</a>
+                                        <a class="dropdown-item" href="catagory">الاصناف</a>
+                                        <a class="dropdown-item" href="contact">اتصل بنا</a>
+                                    </div>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">منوع</a>
@@ -56,16 +65,6 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">الاعمال</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">الصفحات</a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="index.html">الرئيسية</a>
-                                        <a class="dropdown-item" href="catagory.html">الاصناف</a>
-                                        <a class="dropdown-item" href="single-blog.html">التقارير</a>
-                                        <a class="dropdown-item" href="regular-page.html">المنشورات</a>
-                                        <a class="dropdown-item" href="contact.html">اتصل بنا</a>
-                                    </div>
                                 </li>
                                 <li class="nav-item active">
                                     <a class="nav-link" href="#">الرئيسية <span class="sr-only">(current)</span></a>
@@ -89,7 +88,6 @@
     <!-- ***** Header Area End ***** -->
     <!-- ********** Hero Area Start ********** -->
     <div class="hero-area">
-
         <!-- Hero Slides Area -->
         <div class="hero-slides owl-carousel">
             <!-- Single Slide -->
@@ -110,7 +108,7 @@
                                     <p>1</p>
                                 </div>
                                 <div class="post-title">
-                                    <a href="single-blog.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex</a>
+                                    <a href="single_blog">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex</a>
                                 </div>
                             </div>
                             <!-- Single Slide -->
@@ -119,7 +117,7 @@
                                     <p>2</p>
                                 </div>
                                 <div class="post-title">
-                                    <a href="single-blog.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex</a>
+                                    <a href="single_blog">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex</a>
                                 </div>
                             </div>
                             <!-- Single Slide -->
@@ -128,7 +126,7 @@
                                     <p>3</p>
                                 </div>
                                 <div class="post-title">
-                                    <a href="single-blog.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex</a>
+                                    <a href="single_blog">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex</a>
                                 </div>
                             </div>
                             <!-- Single Slide -->
@@ -137,7 +135,7 @@
                                     <p>4</p>
                                 </div>
                                 <div class="post-title">
-                                    <a href="single-blog.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex</a>
+                                    <a href="single_blog">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex</a>
                                 </div>
                             </div>
                         </div>
@@ -478,10 +476,24 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center">
+                                                <!-- Post Content -->
+                                                <div class="post-content">
+                                                    <a href="#" class="headline">
+                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
+                                                    </a>
+                                                    <!-- Post Meta -->
+                                                    <div class="post-meta">
+                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                                                    </div>
+                                                </div>
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
                                                     <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
+                                            </div>
+
+                                            <!-- Single Blog Post -->
+                                            <div class="single-blog-post post-style-2 d-flex align-items-center">
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -491,15 +503,15 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
                                             </div>
 
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b11.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -509,15 +521,15 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
                                             </div>
 
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b12.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -528,23 +540,9 @@
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
                                                 </div>
-                                            </div>
-
-                                            <!-- Single Blog Post -->
-                                            <div class="single-blog-post post-style-2 d-flex align-items-center">
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b13.jpg" alt="">
-                                                </div>
-                                                <!-- Post Content -->
-                                                <div class="post-content">
-                                                    <a href="#" class="headline">
-                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
-                                                    </a>
-                                                    <!-- Post Meta -->
-                                                    <div class="post-meta">
-                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
-                                                    </div>
+                                                    <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -579,10 +577,24 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center">
+                                                <!-- Post Content -->
+                                                <div class="post-content">
+                                                    <a href="#" class="headline">
+                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
+                                                    </a>
+                                                    <!-- Post Meta -->
+                                                    <div class="post-meta">
+                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                                                    </div>
+                                                </div>
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
                                                     <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
+                                            </div>
+
+                                            <!-- Single Blog Post -->
+                                            <div class="single-blog-post post-style-2 d-flex align-items-center">
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -592,15 +604,15 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
                                             </div>
 
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b11.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -610,15 +622,15 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
                                             </div>
 
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b12.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -629,23 +641,9 @@
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
                                                 </div>
-                                            </div>
-
-                                            <!-- Single Blog Post -->
-                                            <div class="single-blog-post post-style-2 d-flex align-items-center">
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b13.jpg" alt="">
-                                                </div>
-                                                <!-- Post Content -->
-                                                <div class="post-content">
-                                                    <a href="#" class="headline">
-                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
-                                                    </a>
-                                                    <!-- Post Meta -->
-                                                    <div class="post-meta">
-                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
-                                                    </div>
+                                                    <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -680,10 +678,24 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center">
+                                                <!-- Post Content -->
+                                                <div class="post-content">
+                                                    <a href="#" class="headline">
+                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
+                                                    </a>
+                                                    <!-- Post Meta -->
+                                                    <div class="post-meta">
+                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                                                    </div>
+                                                </div>
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
                                                     <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
+                                            </div>
+
+                                            <!-- Single Blog Post -->
+                                            <div class="single-blog-post post-style-2 d-flex align-items-center">
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -693,15 +705,15 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
                                             </div>
 
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b11.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -711,15 +723,15 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
                                             </div>
 
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b12.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -730,23 +742,9 @@
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
                                                 </div>
-                                            </div>
-
-                                            <!-- Single Blog Post -->
-                                            <div class="single-blog-post post-style-2 d-flex align-items-center">
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b13.jpg" alt="">
-                                                </div>
-                                                <!-- Post Content -->
-                                                <div class="post-content">
-                                                    <a href="#" class="headline">
-                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
-                                                    </a>
-                                                    <!-- Post Meta -->
-                                                    <div class="post-meta">
-                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
-                                                    </div>
+                                                    <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -781,10 +779,24 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center">
+                                                <!-- Post Content -->
+                                                <div class="post-content">
+                                                    <a href="#" class="headline">
+                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
+                                                    </a>
+                                                    <!-- Post Meta -->
+                                                    <div class="post-meta">
+                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                                                    </div>
+                                                </div>
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
                                                     <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
+                                            </div>
+
+                                            <!-- Single Blog Post -->
+                                            <div class="single-blog-post post-style-2 d-flex align-items-center">
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -794,15 +806,15 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
                                             </div>
 
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b11.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -812,15 +824,15 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
                                             </div>
 
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b12.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -831,23 +843,9 @@
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
                                                 </div>
-                                            </div>
-
-                                            <!-- Single Blog Post -->
-                                            <div class="single-blog-post post-style-2 d-flex align-items-center">
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b13.jpg" alt="">
-                                                </div>
-                                                <!-- Post Content -->
-                                                <div class="post-content">
-                                                    <a href="#" class="headline">
-                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
-                                                    </a>
-                                                    <!-- Post Meta -->
-                                                    <div class="post-meta">
-                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
-                                                    </div>
+                                                    <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -882,10 +880,24 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center">
+                                                <!-- Post Content -->
+                                                <div class="post-content">
+                                                    <a href="#" class="headline">
+                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
+                                                    </a>
+                                                    <!-- Post Meta -->
+                                                    <div class="post-meta">
+                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                                                    </div>
+                                                </div>
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
                                                     <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
+                                            </div>
+
+                                            <!-- Single Blog Post -->
+                                            <div class="single-blog-post post-style-2 d-flex align-items-center">
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -895,15 +907,15 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
                                             </div>
 
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b11.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -913,15 +925,15 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
                                             </div>
 
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b12.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -932,23 +944,9 @@
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
                                                 </div>
-                                            </div>
-
-                                            <!-- Single Blog Post -->
-                                            <div class="single-blog-post post-style-2 d-flex align-items-center">
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b13.jpg" alt="">
-                                                </div>
-                                                <!-- Post Content -->
-                                                <div class="post-content">
-                                                    <a href="#" class="headline">
-                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
-                                                    </a>
-                                                    <!-- Post Meta -->
-                                                    <div class="post-meta">
-                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
-                                                    </div>
+                                                    <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -983,10 +981,24 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center">
+                                                <!-- Post Content -->
+                                                <div class="post-content">
+                                                    <a href="#" class="headline">
+                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
+                                                    </a>
+                                                    <!-- Post Meta -->
+                                                    <div class="post-meta">
+                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                                                    </div>
+                                                </div>
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
                                                     <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
+                                            </div>
+
+                                            <!-- Single Blog Post -->
+                                            <div class="single-blog-post post-style-2 d-flex align-items-center">
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -996,15 +1008,15 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
                                             </div>
 
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b11.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -1014,15 +1026,15 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
                                             </div>
 
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b12.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -1033,23 +1045,9 @@
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
                                                 </div>
-                                            </div>
-
-                                            <!-- Single Blog Post -->
-                                            <div class="single-blog-post post-style-2 d-flex align-items-center">
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b13.jpg" alt="">
-                                                </div>
-                                                <!-- Post Content -->
-                                                <div class="post-content">
-                                                    <a href="#" class="headline">
-                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
-                                                    </a>
-                                                    <!-- Post Meta -->
-                                                    <div class="post-meta">
-                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
-                                                    </div>
+                                                    <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -1084,10 +1082,24 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center">
+                                                <!-- Post Content -->
+                                                <div class="post-content">
+                                                    <a href="#" class="headline">
+                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
+                                                    </a>
+                                                    <!-- Post Meta -->
+                                                    <div class="post-meta">
+                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                                                    </div>
+                                                </div>
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
                                                     <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
+                                            </div>
+
+                                            <!-- Single Blog Post -->
+                                            <div class="single-blog-post post-style-2 d-flex align-items-center">
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -1097,15 +1109,15 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
                                             </div>
 
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b11.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -1115,15 +1127,15 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
                                             </div>
 
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b12.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -1134,23 +1146,9 @@
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
                                                 </div>
-                                            </div>
-
-                                            <!-- Single Blog Post -->
-                                            <div class="single-blog-post post-style-2 d-flex align-items-center">
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b13.jpg" alt="">
-                                                </div>
-                                                <!-- Post Content -->
-                                                <div class="post-content">
-                                                    <a href="#" class="headline">
-                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
-                                                    </a>
-                                                    <!-- Post Meta -->
-                                                    <div class="post-meta">
-                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
-                                                    </div>
+                                                    <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -1185,10 +1183,24 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center">
+                                                <!-- Post Content -->
+                                                <div class="post-content">
+                                                    <a href="#" class="headline">
+                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
+                                                    </a>
+                                                    <!-- Post Meta -->
+                                                    <div class="post-meta">
+                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                                                    </div>
+                                                </div>
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
                                                     <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
+                                            </div>
+
+                                            <!-- Single Blog Post -->
+                                            <div class="single-blog-post post-style-2 d-flex align-items-center">
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -1198,15 +1210,15 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
                                             </div>
 
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b11.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -1216,15 +1228,15 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
                                             </div>
 
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b12.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -1235,23 +1247,9 @@
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
                                                 </div>
-                                            </div>
-
-                                            <!-- Single Blog Post -->
-                                            <div class="single-blog-post post-style-2 d-flex align-items-center">
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b13.jpg" alt="">
-                                                </div>
-                                                <!-- Post Content -->
-                                                <div class="post-content">
-                                                    <a href="#" class="headline">
-                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
-                                                    </a>
-                                                    <!-- Post Meta -->
-                                                    <div class="post-meta">
-                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
-                                                    </div>
+                                                    <img src="~/img/blog-img/b10.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -1358,10 +1356,25 @@
                                                         <div class="col-12 col-md-6">
                                                             <!-- Single Blog Post -->
                                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
+                                                                <!-- Post Content -->
+                                                                <div class="post-content">
+                                                                    <a href="#" class="headline">
+                                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
+                                                                    </a>
+                                                                    <!-- Post Meta -->
+                                                                    <div class="post-meta">
+                                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                                                                    </div>
+                                                                </div>
                                                                 <!-- Post Thumbnail -->
                                                                 <div class="post-thumbnail">
                                                                     <img src="~/img/blog-img/b14.jpg" alt="">
                                                                 </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-6">
+                                                            <!-- Single Blog Post -->
+                                                            <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
                                                                 <!-- Post Content -->
                                                                 <div class="post-content">
                                                                     <a href="#" class="headline">
@@ -1371,16 +1384,16 @@
                                                                     <div class="post-meta">
                                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                                     </div>
+                                                                </div>
+                                                                <!-- Post Thumbnail -->
+                                                                <div class="post-thumbnail">
+                                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="col-12 col-md-6">
                                                             <!-- Single Blog Post -->
                                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
-                                                                <!-- Post Thumbnail -->
-                                                                <div class="post-thumbnail">
-                                                                    <img src="~/img/blog-img/b15.jpg" alt="">
-                                                                </div>
                                                                 <!-- Post Content -->
                                                                 <div class="post-content">
                                                                     <a href="#" class="headline">
@@ -1390,16 +1403,16 @@
                                                                     <div class="post-meta">
                                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                                     </div>
+                                                                </div>
+                                                                <!-- Post Thumbnail -->
+                                                                <div class="post-thumbnail">
+                                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="col-12 col-md-6">
                                                             <!-- Single Blog Post -->
                                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
-                                                                <!-- Post Thumbnail -->
-                                                                <div class="post-thumbnail">
-                                                                    <img src="~/img/blog-img/b16.jpg" alt="">
-                                                                </div>
                                                                 <!-- Post Content -->
                                                                 <div class="post-content">
                                                                     <a href="#" class="headline">
@@ -1410,24 +1423,9 @@
                                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-6">
-                                                            <!-- Single Blog Post -->
-                                                            <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
                                                                 <!-- Post Thumbnail -->
                                                                 <div class="post-thumbnail">
-                                                                    <img src="~/img/blog-img/b17.jpg" alt="">
-                                                                </div>
-                                                                <!-- Post Content -->
-                                                                <div class="post-content">
-                                                                    <a href="#" class="headline">
-                                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
-                                                                    </a>
-                                                                    <!-- Post Meta -->
-                                                                    <div class="post-meta">
-                                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
-                                                                    </div>
+                                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1439,10 +1437,25 @@
                                                         <div class="col-12 col-md-6">
                                                             <!-- Single Blog Post -->
                                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
+                                                                <!-- Post Content -->
+                                                                <div class="post-content">
+                                                                    <a href="#" class="headline">
+                                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
+                                                                    </a>
+                                                                    <!-- Post Meta -->
+                                                                    <div class="post-meta">
+                                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                                                                    </div>
+                                                                </div>
                                                                 <!-- Post Thumbnail -->
                                                                 <div class="post-thumbnail">
                                                                     <img src="~/img/blog-img/b17.jpg" alt="">
                                                                 </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-6">
+                                                            <!-- Single Blog Post -->
+                                                            <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
                                                                 <!-- Post Content -->
                                                                 <div class="post-content">
                                                                     <a href="#" class="headline">
@@ -1452,16 +1465,16 @@
                                                                     <div class="post-meta">
                                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                                     </div>
+                                                                </div>
+                                                                <!-- Post Thumbnail -->
+                                                                <div class="post-thumbnail">
+                                                                    <img src="~/img/blog-img/b17.jpg" alt="">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="col-12 col-md-6">
                                                             <!-- Single Blog Post -->
                                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
-                                                                <!-- Post Thumbnail -->
-                                                                <div class="post-thumbnail">
-                                                                    <img src="~/img/blog-img/b15.jpg" alt="">
-                                                                </div>
                                                                 <!-- Post Content -->
                                                                 <div class="post-content">
                                                                     <a href="#" class="headline">
@@ -1471,16 +1484,16 @@
                                                                     <div class="post-meta">
                                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                                     </div>
+                                                                </div>
+                                                                <!-- Post Thumbnail -->
+                                                                <div class="post-thumbnail">
+                                                                    <img src="~/img/blog-img/b17.jpg" alt="">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="col-12 col-md-6">
                                                             <!-- Single Blog Post -->
                                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
-                                                                <!-- Post Thumbnail -->
-                                                                <div class="post-thumbnail">
-                                                                    <img src="~/img/blog-img/b14.jpg" alt="">
-                                                                </div>
                                                                 <!-- Post Content -->
                                                                 <div class="post-content">
                                                                     <a href="#" class="headline">
@@ -1491,24 +1504,9 @@
                                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-6">
-                                                            <!-- Single Blog Post -->
-                                                            <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
                                                                 <!-- Post Thumbnail -->
                                                                 <div class="post-thumbnail">
-                                                                    <img src="~/img/blog-img/b16.jpg" alt="">
-                                                                </div>
-                                                                <!-- Post Content -->
-                                                                <div class="post-content">
-                                                                    <a href="#" class="headline">
-                                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
-                                                                    </a>
-                                                                    <!-- Post Meta -->
-                                                                    <div class="post-meta">
-                                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
-                                                                    </div>
+                                                                    <img src="~/img/blog-img/b17.jpg" alt="">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1572,10 +1570,26 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
+                                                <!-- Post Content -->
+                                                <div class="post-content">
+                                                    <a href="#" class="headline">
+                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
+                                                    </a>
+                                                    <!-- Post Meta -->
+                                                    <div class="post-meta">
+                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                                                    </div>
+                                                </div>
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
                                                     <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6">
+                                            <!-- Single Blog Post -->
+                                            <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -1585,6 +1599,10 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -1592,10 +1610,6 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b15.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -1605,6 +1619,10 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -1612,10 +1630,6 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b16.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -1626,25 +1640,9 @@
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 col-md-6">
-                                            <!-- Single Blog Post -->
-                                            <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b17.jpg" alt="">
-                                                </div>
-                                                <!-- Post Content -->
-                                                <div class="post-content">
-                                                    <a href="#" class="headline">
-                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
-                                                    </a>
-                                                    <!-- Post Meta -->
-                                                    <div class="post-meta">
-                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
-                                                    </div>
+                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -1754,10 +1752,26 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
+                                                <!-- Post Content -->
+                                                <div class="post-content">
+                                                    <a href="#" class="headline">
+                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
+                                                    </a>
+                                                    <!-- Post Meta -->
+                                                    <div class="post-meta">
+                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                                                    </div>
+                                                </div>
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
                                                     <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6">
+                                            <!-- Single Blog Post -->
+                                            <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -1768,76 +1782,16 @@
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 col-md-6">
-                                            <!-- Single Blog Post -->
-                                            <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b15.jpg" alt="">
-                                                </div>
-                                                <!-- Post Content -->
-                                                <div class="post-content">
-                                                    <a href="#" class="headline">
-                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
-                                                    </a>
-                                                    <!-- Post Meta -->
-                                                    <div class="post-meta">
-                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 col-md-6">
-                                            <!-- Single Blog Post -->
-                                            <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b16.jpg" alt="">
-                                                </div>
-                                                <!-- Post Content -->
-                                                <div class="post-content">
-                                                    <a href="#" class="headline">
-                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
-                                                    </a>
-                                                    <!-- Post Meta -->
-                                                    <div class="post-meta">
-                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 col-md-6">
-                                            <!-- Single Blog Post -->
-                                            <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b17.jpg" alt="">
-                                                </div>
-                                                <!-- Post Content -->
-                                                <div class="post-content">
-                                                    <a href="#" class="headline">
-                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
-                                                    </a>
-                                                    <!-- Post Meta -->
-                                                    <div class="post-meta">
-                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 col-md-6">
-                                            <!-- Single Blog Post -->
-                                            <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
                                                     <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6">
+                                            <!-- Single Blog Post -->
+                                            <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -1847,6 +1801,10 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -1854,10 +1812,6 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b15.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -1867,6 +1821,10 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -1874,10 +1832,6 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b16.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -1887,6 +1841,10 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -1894,10 +1852,6 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b17.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -1907,6 +1861,50 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b14.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6">
+                                            <!-- Single Blog Post -->
+                                            <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
+                                                <!-- Post Content -->
+                                                <div class="post-content">
+                                                    <a href="#" class="headline">
+                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
+                                                    </a>
+                                                    <!-- Post Meta -->
+                                                    <div class="post-meta">
+                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                                                    </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b14.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6">
+                                            <!-- Single Blog Post -->
+                                            <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
+                                                <!-- Post Content -->
+                                                <div class="post-content">
+                                                    <a href="#" class="headline">
+                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
+                                                    </a>
+                                                    <!-- Post Meta -->
+                                                    <div class="post-meta">
+                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                                                    </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -1965,10 +1963,26 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
+                                                <!-- Post Content -->
+                                                <div class="post-content">
+                                                    <a href="#" class="headline">
+                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
+                                                    </a>
+                                                    <!-- Post Meta -->
+                                                    <div class="post-meta">
+                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                                                    </div>
+                                                </div>
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
                                                     <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6">
+                                            <!-- Single Blog Post -->
+                                            <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -1978,6 +1992,10 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -1985,10 +2003,6 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b15.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -1998,6 +2012,10 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -2005,10 +2023,6 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b16.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -2019,25 +2033,9 @@
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 col-md-6">
-                                            <!-- Single Blog Post -->
-                                            <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b17.jpg" alt="">
-                                                </div>
-                                                <!-- Post Content -->
-                                                <div class="post-content">
-                                                    <a href="#" class="headline">
-                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
-                                                    </a>
-                                                    <!-- Post Meta -->
-                                                    <div class="post-meta">
-                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
-                                                    </div>
+                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -2096,10 +2094,26 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
+                                                <!-- Post Content -->
+                                                <div class="post-content">
+                                                    <a href="#" class="headline">
+                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
+                                                    </a>
+                                                    <!-- Post Meta -->
+                                                    <div class="post-meta">
+                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                                                    </div>
+                                                </div>
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
                                                     <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6">
+                                            <!-- Single Blog Post -->
+                                            <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -2109,6 +2123,10 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -2116,10 +2134,6 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b15.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -2129,6 +2143,10 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -2136,10 +2154,6 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b16.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -2150,25 +2164,9 @@
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 col-md-6">
-                                            <!-- Single Blog Post -->
-                                            <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b17.jpg" alt="">
-                                                </div>
-                                                <!-- Post Content -->
-                                                <div class="post-content">
-                                                    <a href="#" class="headline">
-                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
-                                                    </a>
-                                                    <!-- Post Meta -->
-                                                    <div class="post-meta">
-                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
-                                                    </div>
+                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -2227,10 +2225,26 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
+                                                <!-- Post Content -->
+                                                <div class="post-content">
+                                                    <a href="#" class="headline">
+                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
+                                                    </a>
+                                                    <!-- Post Meta -->
+                                                    <div class="post-meta">
+                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                                                    </div>
+                                                </div>
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
                                                     <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6">
+                                            <!-- Single Blog Post -->
+                                            <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -2240,6 +2254,10 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -2247,10 +2265,6 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b15.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -2260,6 +2274,10 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -2267,10 +2285,6 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b16.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -2281,25 +2295,9 @@
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 col-md-6">
-                                            <!-- Single Blog Post -->
-                                            <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b17.jpg" alt="">
-                                                </div>
-                                                <!-- Post Content -->
-                                                <div class="post-content">
-                                                    <a href="#" class="headline">
-                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
-                                                    </a>
-                                                    <!-- Post Meta -->
-                                                    <div class="post-meta">
-                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
-                                                    </div>
+                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -2358,10 +2356,26 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
+                                                <!-- Post Content -->
+                                                <div class="post-content">
+                                                    <a href="#" class="headline">
+                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
+                                                    </a>
+                                                    <!-- Post Meta -->
+                                                    <div class="post-meta">
+                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                                                    </div>
+                                                </div>
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
                                                     <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6">
+                                            <!-- Single Blog Post -->
+                                            <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -2371,6 +2385,10 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -2378,10 +2396,6 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b15.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -2391,6 +2405,10 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -2398,10 +2416,6 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b16.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -2412,25 +2426,9 @@
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 col-md-6">
-                                            <!-- Single Blog Post -->
-                                            <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b17.jpg" alt="">
-                                                </div>
-                                                <!-- Post Content -->
-                                                <div class="post-content">
-                                                    <a href="#" class="headline">
-                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
-                                                    </a>
-                                                    <!-- Post Meta -->
-                                                    <div class="post-meta">
-                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
-                                                    </div>
+                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -2489,10 +2487,26 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
+                                                <!-- Post Content -->
+                                                <div class="post-content">
+                                                    <a href="#" class="headline">
+                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
+                                                    </a>
+                                                    <!-- Post Meta -->
+                                                    <div class="post-meta">
+                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                                                    </div>
+                                                </div>
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
                                                     <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6">
+                                            <!-- Single Blog Post -->
+                                            <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -2502,6 +2516,10 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -2509,10 +2527,6 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b15.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -2522,6 +2536,10 @@
                                                     <div class="post-meta">
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
+                                                </div>
+                                                <!-- Post Thumbnail -->
+                                                <div class="post-thumbnail">
+                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -2529,10 +2547,6 @@
                                         <div class="col-12 col-md-6">
                                             <!-- Single Blog Post -->
                                             <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
-                                                <!-- Post Thumbnail -->
-                                                <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b16.jpg" alt="">
-                                                </div>
                                                 <!-- Post Content -->
                                                 <div class="post-content">
                                                     <a href="#" class="headline">
@@ -2543,25 +2557,9 @@
                                                         <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 col-md-6">
-                                            <!-- Single Blog Post -->
-                                            <div class="single-blog-post post-style-2 d-flex align-items-center mb-1">
                                                 <!-- Post Thumbnail -->
                                                 <div class="post-thumbnail">
-                                                    <img src="~/img/blog-img/b17.jpg" alt="">
-                                                </div>
-                                                <!-- Post Content -->
-                                                <div class="post-content">
-                                                    <a href="#" class="headline">
-                                                        <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most</h5>
-                                                    </a>
-                                                    <!-- Post Meta -->
-                                                    <div class="post-meta">
-                                                        <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
-                                                    </div>
+                                                    <img src="~/img/blog-img/b14.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -2646,87 +2644,6 @@
 
             <div class="world-latest-articles">
                 <div class="row">
-                    <div class="col-12 col-lg-8">
-                        <div class="title">
-                            <h5>Latest Articles</h5>
-                        </div>
-
-                        <!-- Single Blog Post -->
-                        <div class="single-blog-post post-style-4 d-flex align-items-center wow fadeInUpBig" data-wow-delay="0.2s">
-                            <!-- Post Thumbnail -->
-                            <div class="post-thumbnail">
-                                <img src="~/img/blog-img/b18.jpg" alt="">
-                            </div>
-                            <!-- Post Content -->
-                            <div class="post-content">
-                                <a href="#" class="headline">
-                                    <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</h5>
-                                </a>
-                                <p>Pick the yellow peach that looks like a sunset with its red, orange, and pink coat skin, peel it off with your teeth. Sink them into unripened...</p>
-                                <!-- Post Meta -->
-                                <div class="post-meta">
-                                    <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Blog Post -->
-                        <div class="single-blog-post post-style-4 d-flex align-items-center wow fadeInUpBig" data-wow-delay="0.3s">
-                            <!-- Post Thumbnail -->
-                            <div class="post-thumbnail">
-                                <img src="~/img/blog-img/b19.jpg" alt="">
-                            </div>
-                            <!-- Post Content -->
-                            <div class="post-content">
-                                <a href="#" class="headline">
-                                    <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</h5>
-                                </a>
-                                <p>Pick the yellow peach that looks like a sunset with its red, orange, and pink coat skin, peel it off with your teeth. Sink them into unripened...</p>
-                                <!-- Post Meta -->
-                                <div class="post-meta">
-                                    <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Blog Post -->
-                        <div class="single-blog-post post-style-4 d-flex align-items-center wow fadeInUpBig" data-wow-delay="0.4s">
-                            <!-- Post Thumbnail -->
-                            <div class="post-thumbnail">
-                                <img src="~/img/blog-img/b20.jpg" alt="">
-                            </div>
-                            <!-- Post Content -->
-                            <div class="post-content">
-                                <a href="#" class="headline">
-                                    <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</h5>
-                                </a>
-                                <p>Pick the yellow peach that looks like a sunset with its red, orange, and pink coat skin, peel it off with your teeth. Sink them into unripened...</p>
-                                <!-- Post Meta -->
-                                <div class="post-meta">
-                                    <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Blog Post -->
-                        <div class="single-blog-post post-style-4 d-flex align-items-center wow fadeInUpBig" data-wow-delay="0.5s">
-                            <!-- Post Thumbnail -->
-                            <div class="post-thumbnail">
-                                <img src="~/img/blog-img/b21.jpg" alt="">
-                            </div>
-                            <!-- Post Content -->
-                            <div class="post-content">
-                                <a href="#" class="headline">
-                                    <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</h5>
-                                </a>
-                                <p>Pick the yellow peach that looks like a sunset with its red, orange, and pink coat skin, peel it off with your teeth. Sink them into unripened...</p>
-                                <!-- Post Meta -->
-                                <div class="post-meta">
-                                    <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="col-12 col-lg-4">
                         <div class="title">
@@ -2780,6 +2697,93 @@
                         </div>
 
                     </div>
+
+                    <div class="col-12 col-lg-8">
+                        <div class="title">
+                            <h5>Latest Articles</h5>
+                        </div>
+
+                        <!-- Single Blog Post -->
+                        <div class="single-blog-post post-style-4 d-flex align-items-center wow fadeInUpBig" data-wow-delay="0.2s">
+                            <!-- Post Content -->
+                            <div class="post-content">
+                                <a href="#" class="headline">
+                                    <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</h5>
+                                </a>
+                                <p>Pick the yellow peach that looks like a sunset with its red, orange, and pink coat skin, peel it off with your teeth. Sink them into unripened...</p>
+                                <!-- Post Meta -->
+                                <div class="post-meta">
+                                    <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                                </div>
+                            </div>
+                            <!-- Post Thumbnail -->
+                            <div class="post-thumbnail">
+                                <img src="~/img/blog-img/b18.jpg" alt="">
+                            </div>
+
+                        </div>
+
+                        <!-- Single Blog Post -->
+                        <div class="single-blog-post post-style-4 d-flex align-items-center wow fadeInUpBig" data-wow-delay="0.3s">
+                            <!-- Post Content -->
+                            <div class="post-content">
+                                <a href="#" class="headline">
+                                    <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</h5>
+                                </a>
+                                <p>Pick the yellow peach that looks like a sunset with its red, orange, and pink coat skin, peel it off with your teeth. Sink them into unripened...</p>
+                                <!-- Post Meta -->
+                                <div class="post-meta">
+                                    <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                                </div>
+                            </div>
+                            <!-- Post Thumbnail -->
+                            <div class="post-thumbnail">
+                                <img src="~/img/blog-img/b19.jpg" alt="">
+                            </div>
+
+                        </div>
+
+                        <!-- Single Blog Post -->
+                        <div class="single-blog-post post-style-4 d-flex align-items-center wow fadeInUpBig" data-wow-delay="0.4s">
+                            <!-- Post Content -->
+                            <div class="post-content">
+                                <a href="#" class="headline">
+                                    <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</h5>
+                                </a>
+                                <p>Pick the yellow peach that looks like a sunset with its red, orange, and pink coat skin, peel it off with your teeth. Sink them into unripened...</p>
+                                <!-- Post Meta -->
+                                <div class="post-meta">
+                                    <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                                </div>
+                            </div>
+                            <!-- Post Thumbnail -->
+                            <div class="post-thumbnail">
+                                <img src="~/img/blog-img/b20.jpg" alt="">
+                            </div>
+
+                        </div>
+
+                        <!-- Single Blog Post -->
+                        <div class="single-blog-post post-style-4 d-flex align-items-center wow fadeInUpBig" data-wow-delay="0.5s">
+                            <!-- Post Content -->
+                            <div class="post-content">
+                                <a href="#" class="headline">
+                                    <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</h5>
+                                </a>
+                                <p>Pick the yellow peach that looks like a sunset with its red, orange, and pink coat skin, peel it off with your teeth. Sink them into unripened...</p>
+                                <!-- Post Meta -->
+                                <div class="post-meta">
+                                    <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                                </div>
+                            </div>
+                            <!-- Post Thumbnail -->
+                            <div class="post-thumbnail">
+                                <img src="~/img/blog-img/b21.jpg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
