@@ -21,6 +21,28 @@
 
     <!-- Style CSS -->
     <link href="~/style.css" rel="stylesheet" />
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/css/util.css">
+    <link rel="stylesheet" type="text/css" href="~/css/main.css">
+    <!--===============================================================================================-->
 </head>
 
 <body>
@@ -95,15 +117,39 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-8">
                     <div class="page-content">
-                        <h5 class="title" style="text-align:center;font-size:x-large ;text-decoration:solid">: اضافة تقرير</h5>
-                        <hr />
-                        <textarea name="content"> </textarea>
+                        <form class="validate-form">
+                            <h5 class="title" style="text-align:center;font-size:x-large ;text-decoration:solid">: اضافة تقرير</h5>
+                            <hr />
+                            <div class="wrap-input100 validate-input" data-validate="يجب اضافة عنوان للتقرير">
+                                <input id="name" class="input100" style="text-align:center;font-family:Al-Jazeera-Arabic" type="text" name="name" placeholder=".... ماهو عنوان التقرير">
+                                <span class="focus-input100"></span>
+                            </div>
+                            <hr />
+                            <div class="wrap-input100 validate-input" data-validate="يجب اضافة محتوى للتقرير">
+                                <textarea id="message" class="input100" style="text-align:center;font-family:Al-Jazeera-Arabic" name="message" placeholder=".... ماهو محتوى التقرير"></textarea>
+                                <span class="focus-input100"></span>
+                            </div>
+                            <!-- Load More btn -->
+                            <div style="margin-top:20px" class="row">
+                                <div class="col-12" style="display:inline-flex;align-items:center; justify-content: center;">
+                                    <div class="load-more-btn col-md-4 col-lg-offset-3 text-center" style="display:inline">
+                                        <a href="#" class="btn world-btn">الرئيسية</a>
+                                    </div>
+                                    <div class="load-more-btn col-md-4 col-lg-offset-3 text-center" style="display:inline">
+                                        <button type="submit" href="#" class="btn world-btn">اضافة التقرير</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <style>
+ 
 
+    </style>
     <!-- ***** Footer Area Start ***** -->
     <footer class="footer-area">
         <div class="container">
@@ -145,6 +191,41 @@
             </div>
         </div>
     </footer>
+    <!--===============================================================================================-->
+    <script src="~/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/vendor/bootstrap/js/popper.js"></script>
+    <script src="~/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/vendor/select2/select2.min.js"></script>
+    <script>
+        $(".js-select2").each(function () {
+            $(this).select2({
+                minimumResultsForSearch: 20,
+                dropdownParent: $(this).next('.dropDownSelect2')
+            });
+        })
+        $(".js-select2").each(function () {
+            $(this).on('select2:open', function (e) {
+                $(this).parent().next().addClass('eff-focus-selection');
+            });
+        });
+        $(".js-select2").each(function () {
+            $(this).on('select2:close', function (e) {
+                $(this).parent().next().removeClass('eff-focus-selection');
+            });
+        });
+
+    </script>
+    <!--===============================================================================================-->
+    <script src="~/vendor/daterangepicker/moment.min.js"></script>
+    <script src="~/vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/js/main.js"></script>
     <!-- ***** Footer Area End ***** -->
     <!-- jQuery (Necessary for All JavaScript Plugins) -->
     <script src="~/js/jquery/jquery-2.2.4.min.js"></script>
@@ -160,6 +241,9 @@
     <script>
         CKEDITOR.replace('content');
     </script>
+    <script src="js/main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
 </body>
 
 </html>

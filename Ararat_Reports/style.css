@@ -322,6 +322,23 @@ img {
     background-color: #0000ff;
     color: #ffffff; }
 
+  .world-btn-add {
+  position: relative;
+  z-index: 1;
+  padding: 0 25px;
+  width: auto;
+  height: 35px;
+  border: 1px solid;
+  border-color: #d7d7d7;
+  font-size: 14px;
+  border-radius: 50px;
+  line-height: 32px; }
+    .world-btn-add:hover, .world-btn-add:focus {
+        border-color: #0000ff;
+        background-color: #0000ff;
+        color: #ffffff;
+    }
+
 /* :: Header Area CSS */
 .header-area {
   position: fixed;
@@ -408,7 +425,7 @@ img {
     -ms-flex: 0 0 80px;
     flex: 0 0 80px;
     min-width: 80px; }
-    .hero-area .hero-post-slide .single-slide .post-number p {
+    .hero-area .hero-post-slide .single-slide .post-number p  {
         width: 55px;
         height: 55px;
         border: 5px solid;
@@ -919,6 +936,13 @@ img {
     background-color: #0000ff;
     color: #ffffff;
     margin-top: 40px; }
+.contact-form button.world-btn-add,
+.post-a-comment-area button.world-btn-add {
+    border-color: #0000ff;
+    background-color: #0000ff;
+    color: #ffffff;
+    margin-top: 40px;
+}
 
 /* Form CSS */
 .group {

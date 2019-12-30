@@ -369,6 +369,25 @@ img {
         color: $color-white;
     }
 }
+.world-btn-add {
+    position: relative;
+    z-index: 1;
+    padding: 0 25px;
+    width: auto;
+    height: 35px;
+    border: 1px solid;
+    border-color: #d7d7d7;
+    font-size: 14px;
+    border-radius: 50px;
+    line-height: 32px;
+
+    &:hover,
+    &:focus {
+        border-color: $blue-color;
+        background-color: $blue-color;
+        color: $color-white;
+    }
+}
 
 /* :: Header Area CSS */
 
@@ -1062,9 +1081,11 @@ img {
 .post-a-comment-area {
     padding: 60px 55px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+
     @media #{$breakpoint-xs} {
         padding: 30px 25px;
     }
+
     h5 {
         font-size: 18px;
         color: $heading-color;
@@ -1073,8 +1094,18 @@ img {
         font-weight: 700;
         margin-bottom: 30px;
     }
+
     button {
         &.world-btn {
+            border-color: $blue-color;
+            background-color: $blue-color;
+            color: $color-white;
+            margin-top: 40px;
+        }
+    }
+
+    button {
+        &.world-btn-add {
             border-color: $blue-color;
             background-color: $blue-color;
             color: $color-white;
