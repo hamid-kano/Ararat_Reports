@@ -117,38 +117,40 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-8">
                     <div class="page-content">
-                        <form class="validate-form">
-                            <h5 class="title" style="text-align:center;font-size:x-large ;text-decoration:solid">: اضافة تقرير</h5>
-                            <hr />
-                            <div class="wrap-input100 validate-input" data-validate="يجب اضافة عنوان للتقرير">
-                                <input id="name" class="input100" style="text-align:center;font-family:Al-Jazeera-Arabic" type="text" name="name" placeholder=".... ماهو عنوان التقرير">
-                                <span class="focus-input100"></span>
-                            </div>
-                            <hr />
-                            <div class="wrap-input100 validate-input" data-validate="يجب اضافة محتوى للتقرير">
-                                <textarea id="message" class="input100" style="text-align:center;font-family:Al-Jazeera-Arabic" name="message" placeholder=".... ماهو محتوى التقرير"></textarea>
-                                <span class="focus-input100"></span>
-                            </div>
-                            <!-- Load More btn -->
-                            <div style="margin-top:20px" class="row">
-                                <div class="col-12" style="display:inline-flex;align-items:center; justify-content: center;">
-                                    <div class="load-more-btn col-md-4 col-lg-offset-3 text-center" style="display:inline">
-                                        <a href="#" class="btn world-btn">الرئيسية</a>
-                                    </div>
-                                    <div class="load-more-btn col-md-4 col-lg-offset-3 text-center" style="display:inline">
-                                        <button type="submit" href="#" class="btn world-btn">اضافة التقرير</button>
+                        @using (Html.BeginForm("Add_Report", "Home", FormMethod.Post,
+                            new { enctype = "multipart/form-data" }))
+                        {
+                            <form class="validate-form">
+                                <h5 class="title" style="text-align:center;font-size:x-large ;text-decoration:solid">: اضافة تقرير</h5>
+                                <hr />
+                                <div class="wrap-input100 validate-input" data-validate="يجب اضافة عنوان للتقرير">
+                                    <input id="name" class="input100" style="text-align:center;font-family:Al-Jazeera-Arabic" type="text" name="name" placeholder=".... ماهو عنوان التقرير">
+                                    <span class="focus-input100"></span>
+                                </div>
+                                <hr />
+                                <div class="wrap-input100 validate-input" data-validate="يجب اضافة محتوى للتقرير">
+                                    <textarea id="message" class="input100" style="text-align:center;font-family:Al-Jazeera-Arabic" name="message" placeholder=".... ماهو محتوى التقرير"></textarea>
+                                    <span class="focus-input100"></span>
+                                </div>
+                                <!-- Load More btn -->
+                                <div style="margin-top:20px" class="row">
+                                    <div class="col-12" style="display:inline-flex;align-items:center; justify-content: center;">
+                                        <div class="load-more-btn col-md-3 col-lg-offset-9 text-center" style="display:inline">
+                                            <a href="#" class="btn world-btn">الرئيسية</a>
+                                        </div>
+                                        <div class="load-more-btn col-md-3 col-lg-offset-9 text-center" style="display:inline">
+                                            <button type="submit" href="#" class="btn world-btn">اضافة التقرير</button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </form>
-                    </div>
+                            </form>
+                        }
+                        </div>
                 </div>
             </div>
         </div>
     </div>
     <style>
- 
-
     </style>
     <!-- ***** Footer Area Start ***** -->
     <footer class="footer-area">

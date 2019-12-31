@@ -13,10 +13,10 @@ namespace Ararat_Reports
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class AraratReportsDBEntities : DbContext
+    public partial class Entities : DbContext
     {
-        public AraratReportsDBEntities()
-            : base("name=AraratReportsDBEntities")
+        public Entities()
+            : base("name=Entities")
         {
         }
     
@@ -25,5 +25,13 @@ namespace Ararat_Reports
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<C__MigrationHistory> C__MigrationHistory { get; set; }
+        public virtual DbSet<AspNetRole> AspNetRoles { get; set; }
+        public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; }
+        public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; }
+        public virtual DbSet<AspNetUser> AspNetUsers { get; set; }
+        public virtual DbSet<Comment> Comments { get; set; }
+        public virtual DbSet<Post> Posts { get; set; }
+        public virtual DbSet<Report> Reports { get; set; }
     }
 }

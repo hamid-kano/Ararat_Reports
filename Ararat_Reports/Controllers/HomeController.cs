@@ -25,6 +25,21 @@ namespace Ararat_Reports.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public ActionResult Add_Report(FormCollection values, HttpPostedFileBase image)
+        {
+            if (image != null)
+            {
+                string pic = System.IO.Path.GetFileName(image.FileName);
+                string path = System.IO.Path.Combine(
+                                       Server.MapPath("~/img/reports"), pic);
+                // file is uploaded
+                image.SaveAs(path);
+
+            }
+
+            return View();
+        }
         public ActionResult regular_page()
         {
             return View();
