@@ -8,6 +8,7 @@ namespace Ararat_Reports.Controllers
 {
     public class HomeController : Controller
     {
+        Ararat_ReportEntities DB = new Ararat_ReportEntities();
         public ActionResult Index()
         {
             return View();
@@ -26,18 +27,27 @@ namespace Ararat_Reports.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Add_Report(FormCollection values, HttpPostedFileBase image)
+        public ActionResult Add_Report(FormCollection values)
         {
-            if (image != null)
+            string path="";
+            if (Request.Files.Count > 0)
             {
-                string pic = System.IO.Path.GetFileName(image.FileName);
-                string path = System.IO.Path.Combine(
-                                       Server.MapPath("~/img/reports"), pic);
-                // file is uploaded
-                image.SaveAs(path);
-
+                var file = Request.Files[0];
+                if (file != null && file.ContentLength > 0)
+                {
+                    var fileName = System.IO.Path.GetFileName(file.FileName);
+                     path = System.IO.Path.Combine(Server.MapPath("~/img/reports"), fileName);
+                    file.SaveAs(path);
+                }
             }
-
+            Report report = new Report();
+            report.nameReport = values["name"];
+            report.contentReport = values["message"];
+            report.imageURL = path;
+            report.dateTime = DateTime.Now;
+            report.user_id = 0;
+            DB.Reports.Add(report);
+            DB.SaveChanges();
             return View();
         }
         public ActionResult regular_page()
